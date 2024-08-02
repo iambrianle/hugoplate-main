@@ -1,0 +1,154 @@
+baseURL = "/"
+title = "Hugoplate"
+theme = "hugoplate"
+timeZone = "America/New_York"
+paginate = 2
+summaryLength = 10
+hasCJKLanguage = false
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.vn]
+    contentDir = "content/vn"
+    languageName = "Tiếng Việt"
+    weight = 1
+    description = "Tất cả đều nằm trong tiêu đề!"
+    menu = { main = [{ identifier = "about", name = "👤 Về chúng tôi", url = "/vn/about/", weight = 10 }, { identifier = "contact", name = "💬 Liên hệ", url = "/vn/contact/", weight = 20 }] }
+
+  [languages.en]
+    contentDir = "content/en"
+    languageName = "English"
+    weight = 2
+    description = "It's all in the title!"
+    menu = { main = [{ identifier = "about", name = "👤 About", url = "/en/about/", weight = 10 }, { identifier = "contact", name = "💬 Contact", url = "/en/contact/", weight = 20 }] }
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-MEASUREMENT_ID'
+  
+  [services.disqus]
+    shortname = 'themefisher-template'
+
+[permalinks.page]
+  "pages" = "/:slugorfilename/"
+
+[module]
+  [[module.mounts]]
+  source = "assets"
+  target = "assets"
+  
+  [[module.mounts]]
+  source = "hugo_stats.json"
+  target = "assets/watching/hugo_stats.json"
+
+[build]
+noJSConfigInAssets = false
+useResourceCacheWhen = 'fallback'
+[build.buildStats]
+enable = true
+[[build.cachebusters]]
+source = 'assets/watching/hugo_stats\.json'
+target = 'style\.css'
+[[build.cachebusters]]
+source = '(postcss|tailwind)\.config\.js'
+target = 'css'
+[[build.cachebusters]]
+source = 'assets/.*\.(js|ts|jsx|tsx)'
+target = 'js'
+[[build.cachebusters]]
+source = 'assets/.*\.(css|scss|sass)'
+target = 'css'
+[[build.cachebusters]]
+source = 'data/.*\.(.*)$'
+target = 'css'
+[[build.cachebusters]]
+source = 'assets/.*\.(.*)$'
+target = '$1'
+
+[outputs]
+home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
+
+[imaging]
+quality = 80
+resampleFilter = "Lanczos"
+
+[caches]
+  [caches.images]
+  dir = ":resourceDir/_gen"
+  maxAge = "720h"
+  
+  [caches.assets]
+  dir = ":resourceDir/_gen"
+  maxAge = "720h"
+
+[markup]
+  [markup.goldmark.renderer]
+  unsafe = true
+
+  [markup.highlight]
+  style = 'monokai'
+
+  [markup.tableOfContents]
+  startLevel = 2
+  endLevel = 5
+  ordered = true
+
+[mediaTypes]
+  [mediaTypes."application/manifest+json"]
+  suffixes = ["webmanifest"]
+
+[outputFormats]
+  [outputFormats.WebAppManifest]
+  mediaType = "application/manifest+json"
+  rel = "manifest"
+
+  [outputFormats.SearchIndex]
+  mediaType = "application/json"
+  baseName = "searchindex"
+  isPlainText = true
+  notAlternative = true
+
+[[params.plugins.css]]
+link = "plugins/swiper/swiper-bundle.css"
+lazy = true
+[[params.plugins.css]]
+link = "plugins/glightbox/glightbox.css"
+lazy = true
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/brands.css"
+lazy = true
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/solid.css"
+lazy = true
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/icons.css"
+lazy = true
+
+[[params.plugins.js]]
+link = "js/search.js"
+lazy = false
+[[params.plugins.js]]
+link = "plugins/swiper/swiper-bundle.js"
+lazy = false
+[[params.plugins.js]]
+link = "plugins/cookie.js"
+lazy = false
+[[params.plugins.js]]
+link = "plugins/glightbox/glightbox.js"
+lazy = true
+[[params.plugins.js]]
+link = "js/gallery-slider.js"
+lazy = true
+[[params.plugins.js]]
+link = "js/accordion.js"
+lazy = true
+[[params.plugins.js]]
+link = "js/tab.js"
+lazy = true
+[[params.plugins.js]]
+link = "js/modal.js"
+lazy = true
+[[params.plugins.js]]
+link = "plugins/youtube-lite.js"
+lazy = true
