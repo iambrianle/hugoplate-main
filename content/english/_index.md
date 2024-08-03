@@ -2,50 +2,51 @@
 # Banner
 banner:
   title: "Welcome to Power Z Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
+  content: "A non-profit project established by a group of Vietnamese students who moved to the US with their families, providing information, sharing knowledge, and skills through workshops, webinars, and talk shows."
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Get Started For Free"
+    label: "Read our articles"
     link: "https://github.com/zeon-studio/hugoplate"
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
+  - title: "Who are we?"
     image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
-    bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+    content: "VAM is a non-profit project established by a group of Vietnamese students who moved to the US with their families, studying at high schools and universities. With the desire to ease the burden and anxiety for students and parents while studying and working here, we provide information, share knowledge, and skills through workshops, webinars, and talk shows. To make the integration process into the new life as smooth and effective as possible, VAM will focus on topics such as admission procedures, choosing schools for students from elementary to high school, the university application process, how to connect and build a network, etc. We hope to provide motivation for families to confidently prepare for life in the US."
+    # bulletpoints:
+    #   - "10+ Pre-build pages"
+    #   - "95+ Google Pagespeed Score"
+    #   - "Build with Hugo and TailwindCSS for easy and customizable styling"
+    #   - "Fully responsive on all devices"
+    #   - "SEO-optimized for better search engine rankings"
+    #   - "**Open-source and free** for personal and commercial use"
     button:
       enable: false
       label: "Get Started Now"
       link: "#"
 
-  - title: "Discover the Key Features Of Hugo"
+  - title: "What do we do?"
     image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+    content: "We organize online events and workshops for students and parents. The workshops will provide information related to the admission process for students from elementary to high school:"
     bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "University application"
+      - "Adapting to new life"
+      - "Community connection"
+      - "Career orientation and more"
     button:
       enable: true
-      label: "Get Started Now"
+      label: "Read our articles"
       link: "https://github.com/zeon-studio/hugoplate"
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
+  - title: "Our Goals"
     image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+    content: "From personal experience, we aim to reduce the burden on students and parents when working and studying in the US by equipping everyone with the knowledge and skills to stabilize their new life and avoid being overwhelmed by life here."
+    # bulletpoints:
+    #   - "Instantly load static sites for better user experience and SEO."
+    #   - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
+    #   - "Use any front-end library or framework, or build custom components, for any project size."
+    #   - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
     button:
       enable: false
       label: ""

@@ -13,15 +13,17 @@ defaultContentLanguageInSubdir = true
     contentDir = "content/vn"
     languageName = "Tiếng Việt"
     weight = 1
-    description = "Tất cả đều nằm trong tiêu đề!"
     menu = { main = [{ identifier = "about", name = "👤 Về chúng tôi", url = "/vn/about/", weight = 10 }, { identifier = "contact", name = "💬 Liên hệ", url = "/vn/contact/", weight = 20 }] }
+    [languages.vn.params]
+      description = "Tất cả đều nằm trong tiêu đề!"
 
   [languages.en]
     contentDir = "content/en"
     languageName = "English"
     weight = 2
-    description = "It's all in the title!"
     menu = { main = [{ identifier = "about", name = "👤 About", url = "/en/about/", weight = 10 }, { identifier = "contact", name = "💬 Contact", url = "/en/contact/", weight = 20 }] }
+    [languages.en.params]
+      description = "It's all in the title!"
 
 [services]
   [services.googleAnalytics]

@@ -1,12 +1,12 @@
 ---
-title: "How to build an Application with modern Technology"
+title: "Nemo vel ad consectetur namut rutrum ex"
 meta_title: ""
 description: "this is meta description"
 date: 2022-04-04T05:00:00Z
 image: "/images/image-placeholder.png"
-categories: ["Application", "Data"]
+categories: ["Text", "Data"]
 author: "John Doe"
-tags: ["nextjs", "tailwind"]
+tags: ["Minh Le", "Tra Nguyen"]
 draft: false
 ---
 

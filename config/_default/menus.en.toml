@@ -7,33 +7,26 @@ pageRef = "/"
 weight = 1
 
 [[main]]
-name = "About"
-pageRef = "/about"
+name = "Authors"
+pageRef = "/authors"
 weight = 2
 
 [[main]]
-name = "Elements"
-pageRef = "/elements"
+name = "Articles"
+pageRef = "/blog"
 weight = 3
 
 [[main]]
 weight = 4
 name = "Pages"
 
-[[main]]
-parent = "Pages"
-name = "Blog"
-pageRef = "/blog"
 
 [[main]]
 parent = "Pages"
 name = "Contact"
 pageRef = "/contact"
 
-[[main]]
-parent = "Pages"
-name = "Authors"
-pageRef = "/authors"
+
 
 [[main]]
 parent = "Pages"

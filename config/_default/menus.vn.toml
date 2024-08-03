@@ -2,19 +2,20 @@
 
 # main menu
 [[main]]
-name = "Home"
+name = "Trang Chủ"
 pageRef = "/"
 weight = 1
 
 [[main]]
-name = "About"
-pageRef = "/about"
+name = "Các tác giả"
+pageRef = "/authors"
 weight = 2
 
 [[main]]
-name = "Elements"
-pageRef = "/elements"
+name = "Các Bài Viết"
+pageRef = "/blog"
 weight = 3
+
 
 [[main]]
 weight = 4
